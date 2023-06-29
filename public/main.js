@@ -54,9 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     closeModal(loginModal);
 
-    // Make an AJAX request here if needed
-
-    // Redirect to project.html
     window.location.href = 'project.html';
   });
 
@@ -104,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
+//Code to be check don't work
 /* Project Management */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -123,15 +120,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let projectName = document.getElementById('projectName').value;
 
-    // Perform project creation logic, such as making API requests, database operations, etc.
-    // Example: Adding the project to the project list
     addProjectToList(projectName);
 
-    // Clear the form input field
     projectForm.reset();
   });
 
-  // Function to add a project to the project list
+ //to add a project to the project list
   function addProjectToList(projectName) {
     let projectList = document.getElementById('projectList');
     let li = document.createElement('li');
@@ -143,18 +137,16 @@ document.addEventListener('DOMContentLoaded', function() {
 /* to do list */
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Logout button click event handler
+
   let logoutBtn = document.getElementById('logoutBtn');
   logoutBtn.addEventListener('click', function() {
-    // Perform logout logic, such as clearing session data, redirecting to login page, etc.
-    // Example: Redirecting to the login page
+
     window.location.href = 'login.html';
   });
 
-  // Task form submission event handler
   let taskForm = document.getElementById('taskForm');
   taskForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+    event.preventDefault();
 
     let taskName = document.getElementById('taskName').value;
     let taskPriority = document.getElementById('taskPriority').value;
@@ -163,25 +155,19 @@ document.addEventListener('DOMContentLoaded', function() {
     let taskDescription = document.getElementById('taskDescription').value;
     let taskStatus = document.getElementById('taskStatus').value;
 
-    // Perform task creation logic, such as making API requests, database operations, etc.
-    // Example: Adding the task to the task list
     addTaskToList(taskName, taskPriority, taskCategory, taskDueDate, taskDescription, taskStatus);
 
-    // Clear the form input fields
     taskForm.reset();
   });
 
-  // Search button click event handler
   let searchButton = document.getElementById('searchButton');
   searchButton.addEventListener('click', function() {
     let searchInput = document.getElementById('searchInput').value;
 
-    // Perform search logic, such as filtering tasks based on search input
-    // Example: Searching tasks by name
     searchTasks(searchInput);
   });
 
-  // Function to add a task to the task list
+  //to add a task to the task list
   function addTaskToList(name, priority, category, dueDate, description, status) {
     let taskList = document.getElementById('taskList');
     let taskElement = document.createElement('div');
@@ -228,7 +214,6 @@ document.addEventListener('DOMContentLoaded', function() {
     taskList.appendChild(taskElement);
   }
 
-  // Function to search tasks
   function searchTasks(searchInput) {
     let tasks = document.getElementsByClassName('task');
     for (var i = 0; i < tasks.length; i++) {
@@ -237,9 +222,8 @@ document.addEventListener('DOMContentLoaded', function() {
       let taskName = nameElement.textContent.toLowerCase();
 
       if (taskName.includes(searchInput.toLowerCase())) {
-        task.style.display = 'block'; // Show the task if it matches the search
-      } else {
-        task.style.display = 'none'; // Hide the task if it doesn't match the search
+        task.style.display = 'block';
+        task.style.display = 'none';
       }
     }
   }
