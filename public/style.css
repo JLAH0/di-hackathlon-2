@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #3498db, #2980b9);
+  background: #3498db;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -31,7 +31,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 120px);
 }
 
 .content {
@@ -50,24 +50,24 @@ button {
 }
 
 .modal-display {
-  display: none; /* Hide the modal by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .modal-c {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px 40px; /* Add right padding to the modal */
+  margin: 15% auto; 
+  padding: 20px 40px; 
   border: 1px solid #888;
-  width: 80%; /* Set the width of the modal */
-  max-width: 400px; /* Maximum width */
+  width: 80%; 
+  max-width: 400px; 
   border-radius: 5px;
 }
 
@@ -144,7 +144,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -214,42 +214,3 @@ main button#searchButton {
 main button#searchButton:hover {
   background-color: #2980b9;
 }
-
-
-/* Projet */
-/* #projectForm input[type="text"] {
-  display: block;
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-#projectForm button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-}
-
-#projectForm button[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-#projectList {
-  list-style-type: none;
-  padding: 0;
-}
-
-#projectList li {
-  background-color: #ffffff;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
