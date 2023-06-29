@@ -1,0 +1,255 @@
+body {
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 90px);
+}
+
+.content {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #16a085;
+  color: #fff;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.modal-display {
+  display: none; /* Hide the modal by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-c {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px 40px; /* Add right padding to the modal */
+  border: 1px solid #888;
+  width: 80%; /* Set the width of the modal */
+  max-width: 400px; /* Maximum width */
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: #45a049;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container .content button {
+  margin-right: 10px;
+}
+
+header button#logoutBtn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header button#logoutBtn:hover {
+  background-color: #c0392b;
+}
+
+/* Main styles */
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 100px);
+  font-family: 'Poppins', sans-serif;
+}
+
+main form#taskForm {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main form#taskForm input[type="text"],
+main form#taskForm textarea,
+main form#taskForm select,
+main input#searchInput {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+main form#taskForm button[type="submit"],
+main button#searchButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main form#taskForm button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+main form#taskForm button[type="submit"]:hover,
+main button#searchButton:hover {
+  background-color: #45a049;
+}
+
+main #taskList {
+  margin-bottom: 20px;
+}
+
+main h2:nth-of-type(n+2) {
+  margin-top: 30px;
+}
+
+main button#searchButton {
+  max-width: 600px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main button#searchButton:hover {
+  background-color: #2980b9;
+}
+
+
+/* Projet */
+/* #projectForm input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#projectForm button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+#projectForm button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#projectList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#projectList li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
